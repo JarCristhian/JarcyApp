@@ -77,7 +77,7 @@ const NavBar = ({ update }) => {
             </motion.div>
 
             <motion.div className="block h-14" initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
-              <img width={110} className="mt-2.5" src={colorTheme == "dark" ? {imgB} : {imgW} />
+              <img width={110} className="mt-2.5" src={colorTheme == "dark" ? {imgB} : {imgW}} />
             </motion.div>
 
             <div className="md:flex space-x-12 items-center">

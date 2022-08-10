@@ -38,6 +38,7 @@ const NavBar = ({ update }) => {
 
   useEffect(() => {
     // console.log(menuI);
+    //aaaaaaaaaaaa
   }, [menuI]);
 
   return (

@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #17171f;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #242b36;
+    /* background: #374151; */
+    border-radius: 100vh;
+  }
+
+  .bg-body {
+    --tw-bg-opacity: 1;
+    background-color: rgba(23, 23, 31, var(--tw-bg-opacity));
+  }
+
+  .bg-color-hover {
+    background-color: #23262f;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #292a2d;
+  }
+}
+
+::selection {
+  background: #374151; /*Color naranja para el fondo*/
+  color: #fff; /*Color blanco para el texto seleccionado*/
+}
+
+.no-seleccionable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,25 +1,26 @@
 import { motion } from "framer-motion";
 import { imageAnimate, textAnimate } from "../../hook/Animations";
-import profile from "../../img/henry.jpg";
+import profile from "../../img/yo.jpg";
 
 const About = () => {
   return (
     <>
       <motion.div
-        id="about"
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ staggerChildren: 0.3 }}
-        className="max-w-xl mx-auto md:max-w-3xl"
+        className="max-w-xl mx-auto md:max-w-3xl mt-44"
       >
-        <motion.div className="relative flex py-4 items-center" variants={textAnimate}>
+        <motion.div className="flex py-4 items-center" variants={textAnimate}>
           <span className="flex-shrink font-mono ml-6 text-green-300">
             <svg aria-hidden="true" role="img" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
               <path fill="currentColor" d="m10 17l5-5l-5-5v10z"></path>
             </svg>
           </span>
-          <span className="flex-shrink text-3xl -mt-1 text-green-300">Sobre Mi</span>
+          <h2 id="about" className="flex-shrink text-3xl -mt-1 text-green-300">
+            Sobre Mi
+          </h2>
           <div className="flex-grow ml-4 mr-6 border-t border-gray-800"></div>
         </motion.div>
 
@@ -35,7 +36,7 @@ const About = () => {
             </div>
 
             <div>
-              <p className="text-green-300 text-base ml-2 mt-2 mb-1">Lenguages y Frameworks</p>
+              <p className="text-green-500 dark:text-green-300 text-base ml-2 mt-2 mb-1">Lenguages y Frameworks</p>
               <div className="flex text-sm mt-2 mb-4 mr-6 pb-4 border-b border-slate-800">
                 <ul className="list-square ml-8">
                   <li className="text-green-400">
@@ -68,20 +69,20 @@ const About = () => {
               </div>
 
               <p className="text-sm font-sans text-justify max-w-md text-slate-500">
-                Disfruto mucho pasar el tiempo diseñando interfaces y experiencias de usuario. Siempre en busqueda de nuevos concocimentos y listo
-                para iniciar nuevos retos.
+                Disfruto mucho pasar el tiempo diseñando interfaces y experiencias de usuario. Siempre en busqueda de nuevos conocimentos y listo para
+                iniciar nuevos retos.
               </p>
             </div>
           </motion.div>
 
           <motion.div
-            className="flex h-64 w-48 mr-6 mt-12 ml-24 sm:ml-24 md:-ml-0 lg:-ml-0 relative before:absolute before:top-1.5 before:left-1.5 before:rounded-lg before:w-full before:h-full rounded-lg before:bg-green-300"
+            className="flex h-64 w-48 mr-6 mt-12 ml-[23%] sm:ml-¨[23%] md:-ml-0 lg:-ml-0 before:top-1.5 before:left-1.5 before:rounded-lg before:w-full before:h-full rounded-lg before:bg-green-300"
             variants={imageAnimate}
           >
             <img
               src={profile}
               alt=""
-              className="absolute transition ease-out hover:-translate-y-0.5 inset-0 w-full h-full object-cover rounded-lg"
+              className="transition ease-out hover:-translate-y-0.5 inset-0 w-full h-full object-cover rounded-lg"
               loading="lazy"
             />
           </motion.div>

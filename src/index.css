@@ -15,15 +15,18 @@ body {
     width: 5px;
     height: 5px;
   }
-
-  .scrollbar::-webkit-scrollbar-track {
+  /* .scrollbar::-webkit-scrollbar-track {
     border-radius: 100vh;
     background: #17171f;
+  } */
+
+  .scrollbar-dark::-webkit-scrollbar-thumb {
+    background: #242b36;
+    border-radius: 100vh;
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    background: #242b36;
-    /* background: #374151; */
+    background: #a8a8a8;
     border-radius: 100vh;
   }
 

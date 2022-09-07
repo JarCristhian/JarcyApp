@@ -1,8 +1,4 @@
-import { useState } from "react";
-
-const SideBar = ({ update }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const SideBar = ({ isOpen, closeSideBar }) => {
   const navigation = [
     { name: "Inicio", href: "#home" },
     { name: "Sobre Mi", href: "#about" },
@@ -12,12 +8,8 @@ const SideBar = ({ update }) => {
 
   return (
     <>
-      {!isOpen ? (
-        <button className=" text-gray-400 fixed z-30 flex items-center cursor-pointer left-[10vw] top-4" onClick={() => setIsOpen(!isOpen)}>
-          OO
-        </button>
-      ) : (
-        <button className=" text-gray-400 fixed z-30 flex items-center cursor-pointer left-[10vw] top-3.5" onClick={() => setIsOpen(!isOpen)}>
+      {isOpen && (
+        <button className=" text-gray-400 dark:text-gray-300 fixed z-40 flex items-center cursor-pointer left-[7vw] top-3.5" onClick={closeSideBar}>
           <svg aria-hidden="true" role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -28,7 +20,7 @@ const SideBar = ({ update }) => {
       )}
 
       <div
-        className={`top-0 right-0 z-20 fixed w-full h-full bg-white dark:bg-body  ${
+        className={`top-0 right-0 z-30 fixed w-full h-full bg-white dark:bg-body  ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-200`}
       >
@@ -37,8 +29,8 @@ const SideBar = ({ update }) => {
             <div className="mt-[10vh]" key={item.name}>
               <a
                 href={item.href}
-                onClick={() => setIsOpen(!isOpen)}
-                className="p-[10vw] text-4xl text-gray-600 hover:text-green-500 dark:text-gray-300 dark:hover:text-green-300"
+                onClick={closeSideBar}
+                className="pl-[10vw] text-4xl text-gray-600 hover:text-green-500 dark:text-gray-300 dark:hover:text-green-300"
               >
                 {item.name}
               </a>

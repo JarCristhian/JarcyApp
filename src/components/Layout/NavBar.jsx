@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import UseDarkMode from "../../hook/UseDarkMode";
 import { motion } from "framer-motion";
 import logoB from "../../img/jarcyB.png";
@@ -11,26 +10,19 @@ const navigation = [
   { name: "Contacto", href: "#contact" },
 ];
 
-const NavBar = ({ update }) => {
+const NavBar = ({ openSideBar }) => {
   const [colorTheme, setTheme] = UseDarkMode();
-  let [menuI, setMenuI] = useState(true);
 
-  useEffect(() => {
-    // console.log(menuI);
-    //aaaaaaaaaaaa
-  }, [menuI]);
+  const changePosition = () => {};
 
   return (
-    <div className="flex justify-between z-20 items-center w-screen px-8 md:px-18 bg-slate-100 dark:bg-body">
+    <div className="flex justify-between items-center w-screen px-8 md:px-18 bg-slate-100 dark:bg-body">
       <motion.div
         initial={{ y: 20 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
         className="md:hidden text-gray-400 dark:text-gray-300  hover:text-green-500 dark:hover:text-green-300 cursor-pointer"
-        onClick={() => {
-          menuI = !menuI;
-          setMenuI(menuI);
-        }}
+        onClick={openSideBar}
       >
         <svg aria-hidden="true" role="img" width="26" height="26" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
           <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16"></path>

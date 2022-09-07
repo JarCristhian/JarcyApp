@@ -18,15 +18,13 @@ const About = () => {
               <path fill="currentColor" d="m10 17l5-5l-5-5v10z"></path>
             </svg>
           </span>
-          <h2 id="about" className="flex-shrink text-3xl -mt-1 text-green-300">
-            Sobre Mi
-          </h2>
-          <div className="flex-grow ml-4 mr-6 border-t border-gray-800"></div>
+          <h2 className="flex-shrink text-3xl -mt-1 text-green-300">Sobre Mi</h2>
+          <div className="flex-grow ml-4 mr-6 border-t border-gray-300 dark:border-gray-800"></div>
         </motion.div>
 
         <div className="md:flex">
           <motion.div className="p-6" variants={textAnimate}>
-            <div className="flex items-baseline mt-4 pb-2 border-b border-slate-800">
+            <div className="flex items-baseline mt-4 pb-2 border-b border-gray-300 dark:border-gray-800">
               <p className="text-sm text-justify max-w-md font-sans text-slate-400">
                 Hola, mi nombre es Jar Cristhian Ramos Trigoso, tengo 22 años, proveniente de SanMartin/Perú. Mi pasión por la programación comenzo
                 cuando tenia 12 años, fue cuando inicie a usar una computadora y al poco tiempo me propuse a estudiar alguna profesión. Soy egresado
@@ -37,7 +35,7 @@ const About = () => {
 
             <div>
               <p className="text-green-500 dark:text-green-300 text-base ml-2 mt-2 mb-1">Lenguages y Frameworks</p>
-              <div className="flex text-sm mt-2 mb-4 mr-6 pb-4 border-b border-slate-800">
+              <div className="flex text-sm mt-2 mb-4 mr-6 pb-4 border-b border-gray-300 dark:border-gray-800">
                 <ul className="list-square ml-8">
                   <li className="text-green-400">
                     <p className="text-slate-400">JavaScript (Vue, React)</p>
@@ -76,13 +74,14 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex h-64 w-48 mr-6 mt-12 ml-[23%] sm:ml-¨[23%] md:-ml-0 lg:-ml-0 before:top-1.5 before:left-1.5 before:rounded-lg before:w-full before:h-full rounded-lg before:bg-green-300"
+            className="flex h-64 w-48 mr-6 mt-12 ml-[23%] relative z-10 before:absolute sm:ml-¨[23%] md:-ml-0 lg:-ml-0 before:top-1.5 before:left-1.5 before:rounded-lg before:w-full before:h-full select-none rounded-lg before:bg-green-300"
             variants={imageAnimate}
           >
             <img
               src={profile}
+              draggable={false}
               alt=""
-              className="transition ease-out hover:-translate-y-0.5 inset-0 w-full h-full object-cover rounded-lg"
+              className="absolute z-10 transition ease-out hover:-translate-y-0.5 inset-0 w-full h-full object-cover rounded-lg"
               loading="lazy"
             />
           </motion.div>

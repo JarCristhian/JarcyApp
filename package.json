@@ -8,10 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.3",
     "framer-motion": "^6.3.11",
     "install": "^0.13.0",
     "npm": "^8.12.1",
+    "popmotion": "^11.0.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

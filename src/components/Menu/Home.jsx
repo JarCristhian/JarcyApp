@@ -12,7 +12,7 @@ const NavBar = () => {
       >
         <div className="container flex flex-wrap lg:mr-40 lg:w-4/6 sm:mx-auto items-center">
           <div className="lg:flex-grow md:w-1/2 flex flex-col items-start text-left px-4 mb-16 md:mb-0">
-            <h3 className="ml-2 text-xl text-gray-400 dark:text-white/90">Hola, mi nombre es</h3>
+            <h3 className="ml-2 text-xl text-gray-400 dark:text-white/90 select-none">Hola, mi nombre es</h3>
             <h4 className="font-sans font-bold text-7xl text-green-400 select-none mt-2">Jar Cristhian</h4>
             <h4 className="font-sans font-bold text-6xl dark:text-gray-300 select-none mt-2">Frontend Developer</h4>
             <p className="mt-2 mb-6 leading-relaxed">

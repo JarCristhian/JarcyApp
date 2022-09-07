@@ -37,7 +37,7 @@ const NavBar = ({ openSideBar }) => {
         {navigation.map((item) =>
           item.href !== "#contact" ? (
             <motion.div initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.5 }} key={item.name} className="hidden md:flex">
-              <a href={item.href} className="text-gray-700 hover:text-green-500 dark:text-gray-300 dark:hover:text-green-300">
+              <a href={item.href} className="text-gray-700 select-none hover:text-green-500 dark:text-gray-300 dark:hover:text-green-300">
                 {item.name}
               </a>
             </motion.div>
@@ -45,7 +45,7 @@ const NavBar = ({ openSideBar }) => {
             <motion.div initial={{ y: 20 }} animate={{ y: 0 }} transition={{ duration: 0.5 }} key={item.name} className="flex justify-between">
               <a
                 href={item.href}
-                className="hidden md:flex cursor-pointer text-gray-700 hover:text-green-500 dark:text-gray-300 dark:hover:text-green-300 mr-6"
+                className="hidden md:flex cursor-pointer text-gray-700 select-none hover:text-green-500 dark:text-gray-300 dark:hover:text-green-300 mr-6"
               >
                 {item.name}
               </a>

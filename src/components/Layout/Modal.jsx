@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import jPlayer from "../../img/projects/jPlayer/jPlayer.png";
 import jPlayer2 from "../../img/projects/jPlayer/jPlayer2.png";
-import AsiSoft from "../../img/projects/AsiSoft/AsiSoft.png";
+import AsiSoft from "../../img/projects/AsiSoft/asiSoft.png";
 
 //Empiria
 import empiria from "../../img/projects/empiria/empiria.png";

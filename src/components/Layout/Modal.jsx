@@ -27,7 +27,7 @@ import report from "../../img/projects/awa/report.png";
 //Zenda
 import zenda from "../../img/projects/zenda/sale.jpg";
 import purchase from "../../img/projects/zenda/purchase.jpg";
-import voucher from "../../img/projects/zenda/vouchers.jpg";
+import vouchers from "../../img/projects/zenda/vouchers.JPG";
 import product from "../../img/projects/zenda/product.jpg";
 
 const variants = {
@@ -74,7 +74,7 @@ const data = [
   },
   {
     name: "Zenda",
-    images: [zenda, purchase, product, voucher],
+    images: [zenda, purchase, product, vouchers],
   },
 ];
 

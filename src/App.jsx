@@ -25,7 +25,7 @@ const App = () => {
     <>
       <div className="static h-screen w-screen overflow-x-hidden overflow-y-scroll scrollbar dark:scrollbar-dark bg-slate-100 dark:bg-body">
         <header id="home">
-          <div className="container absolute z-30 shadow-2xl">
+          <div className="absolute z-30 shadow-2xl">
             <NavBar openSideBar={openSideBar} />
           </div>
         </header>

@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { wrap } from "popmotion";
 import { motion, AnimatePresence } from "framer-motion";
 
-import jPlayer from "../../img/projects/jPlayer/jPlayer.png";
-import jPlayer2 from "../../img/projects/jPlayer/jPlayer2.png";
 import AsiSoft from "../../img/projects/asiSoft/asiSoft.png";
 
 //Empiria
@@ -25,6 +23,12 @@ import sale from "../../img/projects/awa/sale.png";
 import saleList from "../../img/projects/awa/saleList.png";
 import predio from "../../img/projects/awa/predio.png";
 import report from "../../img/projects/awa/report.png";
+
+//Zenda
+import zenda from "../../img/projects/zenda/sale.jpg";
+import purchase from "../../img/projects/zenda/purchase.jpg";
+import voucher from "../../img/projects/zenda/vouchers.jpg";
+import product from "../../img/projects/zenda/product.jpg";
 
 const variants = {
   enter: (direction) => {
@@ -53,10 +57,6 @@ const swipePower = (offset, velocity) => {
 };
 const data = [
   {
-    name: "JarcyPlayer",
-    images: [jPlayer, jPlayer2],
-  },
-  {
     name: "AsiSoft",
     images: [AsiSoft],
   },
@@ -71,6 +71,10 @@ const data = [
   {
     name: "Awa",
     images: [awa, sale, saleList, predio, report],
+  },
+  {
+    name: "Zenda",
+    images: [zenda, purchase, voucher, product],
   },
 ];
 

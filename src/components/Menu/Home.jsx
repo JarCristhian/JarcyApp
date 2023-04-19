@@ -15,9 +15,9 @@ const NavBar = () => {
           <div className="lg:flex-grow md:w-1/2 flex flex-col items-start text-left px-4 mb-16 md:mb-0">
             <h3 className="ml-2 text-xl text-gray-400 dark:text-white/90 select-none">Hola, mi nombre es</h3>
             <h4 className="font-sans font-bold text-7xl text-green-400 select-none mt-2">Jar Cristhian</h4>
-            <h4 className="font-sans font-bold text-6xl dark:text-gray-300 select-none mt-2">Frontend Developer</h4>
+            <h4 className="font-sans font-bold text-6xl dark:text-gray-300 select-none mt-2">Software Developer</h4>
             <p className="mt-2 mb-6 leading-relaxed">
-              Soy Programador de Software apasionado por la programación y adopción de nuevas tecnologías. Creo y diseño{" "}
+              Soy Desarrollador de Software apasionado por la programación y adopción de nuevas tecnologías. Creo y diseño{" "}
               <span className="text-green-500 dark:text-green-300">UI</span> & <span className="text-green-500 dark:text-green-300">UX</span>{" "}
               increíbles para el usuario. Actualmente enfocado en el desarrollo Web y Móvil.
             </p>

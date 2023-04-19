@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { textAnimate } from "../../hook/Animations";
 import Modal from "../Layout/Modal";
-import jPlayer from "../../img/projects/jPlayer/jPlayer.png";
+import zenda from "../../img/projects/zenda/purchase.jpg";
 import asiSoft from "../../img/projects/asiSoft/asiSoft.png";
 import empiria from "../../img/projects/empiria/empiria.png";
 import faqture from "../../img/projects/faqture/faqture.png";
@@ -32,16 +32,6 @@ const Work = () => {
 
         <div className="ml-4 mr-4">
           <motion.div className="grid gap-4 sm:grid-cols-3" variants={textAnimate}>
-            <div className="bg-white dark:bg-gray-800/30 rounded-lg shadow-2xl transition ease-out hover:-translate-y-2">
-              <p className="text-gray-600 dark:text-gray-300 p-4 text-lg text-left font-semibold tracking-widest">JarcyPlayer</p>
-              <p className="text-sm p-3 -mt-5 font-sans text-justify max-w-xs text-slate-400">
-                Mi primera aplicación desarrollada en <span className="text-green-500 dark:text-green-300"> C#</span> en el año 2018, en modo de
-                aprendizaje con este increible lenguaje de programación.
-              </p>
-              <div className="relative pb-36" onClick={() => showModal("JarcyPlayer")}>
-                <img src={jPlayer} draggable={false} className="rounded-b-lg cursor-pointer select-none absolute h-full w-full object-cover" />
-              </div>
-            </div>
             <div className="bg-white dark:bg-gray-800/30 rounded-lg shadow-2xl transition ease-out hover:-translate-y-2">
               <p className="text-gray-600 dark:text-gray-300 p-4 text-lg text-left font-semibold tracking-widest">AsiSoft</p>
               <p className="text-sm p-3 -mt-5 font-sans text-justify max-w-xs text-slate-400">
@@ -80,6 +70,17 @@ const Work = () => {
               </p>
               <div className="relative pb-36" onClick={() => showModal("Awa")}>
                 <img src={awa} draggable={false} className="rounded-b-lg cursor-pointer  select-none absolute h-full w-full object-cover" />
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800/30 rounded-lg shadow-2xl transition ease-out hover:-translate-y-2">
+              <p className="text-gray-600 dark:text-gray-300 p-4 text-lg text-left font-semibold tracking-widest">Zenda</p>
+              <p className="text-sm p-3 -mt-5 font-sans text-justify max-w-xs text-slate-400">
+                Sistema Comercial encargado de generar/administrar comprobantes electronicos, y administrar almacen. Desarrollado en
+                <span className="text-green-500 dark:text-green-300"> JS</span> & <span className="text-green-500 dark:text-green-300">Python.</span>
+              </p>
+              <div className="relative pb-36" onClick={() => showModal("Zenda")}>
+                <img src={zenda} draggable={false} className="rounded-b-lg cursor-pointer  select-none absolute h-full w-full object-cover" />
               </div>
             </div>
           </motion.div>

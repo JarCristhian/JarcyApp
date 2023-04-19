@@ -1,8 +1,25 @@
 import { motion } from "framer-motion";
 import { imageAnimate, textAnimate } from "../../hook/Animations";
 import profile from "../../img/yo.jpg";
+import { useEffect, useState } from "react";
 
 const About = () => {
+  const [age, setAge] = useState(0);
+
+  const myAge = () => {
+    let myYear = 2000;
+    let year = new Date().getFullYear();
+    let month = new Date().getMonth() + 1;
+    let myDay = year - myYear - 1;
+    if (month > 4) {
+      myDay = year - myYear;
+    }
+    return myDay;
+  };
+
+  useEffect(() => {
+    setAge(myAge());
+  }, []);
   return (
     <>
       <motion.div
@@ -26,7 +43,7 @@ const About = () => {
           <motion.div className="p-6" variants={textAnimate}>
             <div className="flex items-baseline mt-4 pb-2 border-b border-gray-300 dark:border-gray-800">
               <p className="text-sm text-justify max-w-md font-sans text-slate-400">
-                Hola, mi nombre es Jar Cristhian Ramos Trigoso, tengo 22 años, proveniente de SanMartin/Perú. Mi pasión por la programación comenzo
+                Hola, mi nombre es Jar Cristhian Ramos Trigoso, tengo {age} años, proveniente de SanMartin/Perú. Mi pasión por la programación comenzo
                 cuando tenia 12 años, fue cuando inicie a usar una computadora y al poco tiempo me propuse a estudiar alguna profesión. Soy egresado
                 de la carrera de <span className="text-green-500 dark:text-green-300">Desarrollo de Software</span> en{" "}
                 <span className="text-green-500 dark:text-green-300">SENATI. </span>
@@ -44,7 +61,7 @@ const About = () => {
                     <p className="text-slate-400">Python (Django, Django Rest)</p>
                   </li>
                   <li className="text-green-400">
-                    <p className="text-slate-400">Java</p>
+                    <p className="text-slate-400">TypeScript</p>
                   </li>
                   <li className="text-green-400">
                     <p className="text-slate-400">C#</p>

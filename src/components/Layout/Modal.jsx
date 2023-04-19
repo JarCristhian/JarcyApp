@@ -74,7 +74,7 @@ const data = [
   },
   {
     name: "Zenda",
-    images: [zenda, purchase, voucher, product],
+    images: [zenda, purchase, product, voucher],
   },
 ];
 

@@ -29,7 +29,7 @@ const Contact = () => {
               <div className="w-screen max-w-xl md:max-w-3xl px-8">
                 <div className="mb-6">
                   <label className="text-gray-400 block mb-3 text-xl">Correo Electrónico</label>
-                  <input className="w-full text-gray-600 dark:text-white/80 bg-white/5 dark:bg-gray-800/30 border border-gray-400 dark:border-gray-600 shadow-md focus:outline-none focus:border-green-400 dark:focus:border-green-400  px-4 py-4 h-12 rounded" />
+                  <input value="jarcristhian@gmail.com" className="w-full text-gray-600 dark:text-white/80 bg-white/5 dark:bg-gray-800/30 border border-gray-400 dark:border-gray-600 shadow-md focus:outline-none focus:border-green-400 dark:focus:border-green-400  px-4 py-4 h-12 rounded" />
                 </div>
                 <div className="mb-6">
                   <label className="text-gray-400 block mb-3 text-xl">Mensaje</label>
@@ -52,7 +52,7 @@ const Contact = () => {
             </div>
 
             <div className="flex justify-center items-center mb-12 mt-12">
-              <a href="https://www.instagram.com/jarcristhian" target="_blank" className="nav-dot block w-7 h-7 ml-6">
+              <a href="https://www.instagram.com/jarcristhian" target="_blank" className="nav-dot block w-7 h-7">
                 <svg
                   aria-hidden="true"
                   role="img"
@@ -68,7 +68,7 @@ const Contact = () => {
                   ></path>
                 </svg>
               </a>
-              <a href="https://www.twitter.com" target="_blank" className="nav-dot block w-7 h-7">
+              <a href="https://www.twitter.com" target="_blank" className="nav-dot block w-7 h-7 ml-6">
                 <svg
                   aria-hidden="true"
                   role="img"

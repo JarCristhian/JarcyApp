@@ -35,6 +35,7 @@ const Contact = () => {
                   <label className="text-gray-400 block mb-3 text-xl">Mensaje</label>
                   <textarea
                     type="email"
+                    value="Puedes contactarme usando este correo o alguna red social."
                     className=" w-full text-gray-600 dark:text-white/80 bg-white/5 dark:bg-gray-800/30 border border-gray-400 dark:border-gray-600  px-4 py-4 h-30 shadow-md focus:outline-none focus:border-green-400 dark:focus:border-green-400 rounded resize-none"
                   ></textarea>
                 </div>
@@ -46,7 +47,7 @@ const Contact = () => {
                       d="M3.79 2.773L24.86 12.85a1.25 1.25 0 0 1 0 2.256L3.79 25.183a1.25 1.25 0 0 1-1.746-1.456l2.66-9.749l-2.66-9.749A1.25 1.25 0 0 1 3.79 2.773Zm-.155 1.589l2.423 8.887L17 13.25a.75.75 0 0 1 .743.649l.007.101a.75.75 0 0 1-.648.743L17 14.75H6.046l-2.41 8.844l20.106-9.616L3.635 4.362Z"
                     />
                   </svg>
-                  Enviar
+                  Contactar
                 </button>
               </div>
             </div>

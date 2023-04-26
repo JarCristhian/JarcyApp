@@ -28,14 +28,10 @@ const Contact = () => {
             <div className="flex justify-center items-center mt-12 ml-2">
               <div className="w-screen max-w-xl md:max-w-3xl px-8">
                 <div className="mb-6">
-                  <label className="text-gray-400 block mb-3 text-xl">Correo Electrónico</label>
-                  <input value="jarcristhian@gmail.com" className="w-full text-gray-600 dark:text-white/80 bg-white/5 dark:bg-gray-800/30 border border-gray-400 dark:border-gray-600 shadow-md focus:outline-none focus:border-green-400 dark:focus:border-green-400  px-4 py-4 h-12 rounded" />
-                </div>
-                <div className="mb-6">
                   <label className="text-gray-400 block mb-3 text-xl">Mensaje</label>
                   <textarea
                     type="email"
-                    value="Puedes contactarme usando este correo o alguna red social."
+                    value="Puedes contactarme usando alguna red social."
                     className=" w-full text-gray-600 dark:text-white/80 bg-white/5 dark:bg-gray-800/30 border border-gray-400 dark:border-gray-600  px-4 py-4 h-30 shadow-md focus:outline-none focus:border-green-400 dark:focus:border-green-400 rounded resize-none"
                   ></textarea>
                 </div>

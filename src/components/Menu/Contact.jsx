@@ -55,7 +55,7 @@ const Contact = () => {
                   ></path>
                 </svg>
               </a>
-              <a href="https://www.twitter.com" target="_blank" className="nav-dot block w-7 h-7 ml-6">
+              <a href="https://www.twitter.com/cristhian_jar" target="_blank" className="nav-dot block w-7 h-7 ml-6">
                 <svg
                   aria-hidden="true"
                   role="img"

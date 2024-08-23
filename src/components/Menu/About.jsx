@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { imageAnimate, textAnimate } from "../../hook/Animations";
-import profile from "../../img/yo.jpg";
+import profile from "../../img/i.jpeg";
 import { useEffect, useState } from "react";
 
 const About = () => {

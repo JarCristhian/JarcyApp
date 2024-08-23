@@ -105,7 +105,7 @@ const Modal = ({ name, show }) => {
             initial={{ y: -150 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.1 }}
-            className="modal-container z-40 inline-block align-bottom bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-xl transform transition-all my-[25vh] sm:my-[10vh] sm:max-w-6xl w-full"
+            className="modal-container z-40 inline-block align-bottom bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-xl transform transition-all my-[25vh] sm:my-[10vh] sm:max-w-6xl md:max-w-6xl w-full"
           >
             <div className="modal-wrapper pt-5 pb-4 sm:p-2 sm:pt-6">
               <div className="modal-wrapper-flex sm:flex sm:items-start">
